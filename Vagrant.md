@@ -8,7 +8,9 @@ vagrant init bento/ubuntu-20.04
 vagrant up
 # 启动
 vagrant ssh
+
 vagrant destroy
+vagrant halt
 
 # 修改vagrant配置
 vi Vagrantfile
@@ -84,6 +86,20 @@ server {
 sudo systemctl restart nginx
 ```
 
+查看nginx状态
+
+```sh
+systemctl status nginx
+```
+
+查看nginx错误日志
+
+```sh
+cat /var/log/nginx/error.log
+```
+
+
+
 ### PHP 部署
 
 - ### 下载相关工具
@@ -122,7 +138,6 @@ sudo systemctl restart nginx
   ```shell
   config.vm.box = "bento/ubuntu-20.04"
   config.vm.hostname = "supply-chain"
-  config.vm.network "public_network"
   config.vm.synced_folder("./", "/vagrant", disabled: true)
   #修改时区
   config.vm.provision :shell, :inline => "sudo rm /etc/localtime && sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime", run: "always"
@@ -134,7 +149,7 @@ sudo systemctl restart nginx
       esxi.guest_memsize = '2048'
   end
   ```
-
+  
 - ```sh
   vagrant up
   vagrant ssh
