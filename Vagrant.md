@@ -327,3 +327,21 @@ cat /var/log/nginx/error.log
   ```
 
   
+
+### Redis 
+
+```sh
+redis-cli
+flushall # 清除所有key
+keys HM_npd:admin_id_to_menu_* # 展示符合条件的key
+get HM_npd:admin_id_to_menu_1 # 获取key的值
+```
+
+
+
+### Error Log
+
+```
+/var/www/log/
+```
+

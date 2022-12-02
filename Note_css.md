@@ -977,3 +977,11 @@ ctaButton.addEventListener('animationiteration', function(event) {
 }
 ```
 
+
+
+### Trouble Shooting
+
+1. `position:sticky` not working
+   - `overflow` is set to **hidden、scroll or auto** on any of the parents of the element
+   - Any parent element has a set `height`
+   - Any parent element has set one of `-ms-transform`, `-webkit-transform`, `transform`

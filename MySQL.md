@@ -8,6 +8,17 @@ show tables;
 drop database testsql; -- delete database
 ```
 
+
+
+# Connection
+
+```sql
+mysql -u {username} -p
+mysql -h 192.168.10.121 -P 3306 -u root -p
+```
+
+
+
 # Data Definition Language 
 
 ### Numeric Data Types
@@ -572,5 +583,144 @@ select month('2018-06-05 07:45:32');
 -- 6
 
 -- same as year
+```
+
+
+
+# Performance Tune
+
+### Use MySQL EXPLAIN for Query Optimization
+
+```sql
+explain select * from outbound_info where proxy = '佳景' \G
+# explain just show the query plan
+```
+
+![截屏2022-07-27 下午3.53.58](https://tva1.sinaimg.cn/large/e6c9d24ely1h4ljewbs4oj20cz05sgls.jpg)
+
+**type: ALL** ->
+
+​	 The output has the access type set to ALL which is the most basic access type because it scans all rows for the table,
+
+it is also the most expensive one. 
+
+​	It means 176 rows will be examined and for each row a WHERE clause will be applied.
+
+**Filtered: 10.00** -> 
+
+​	10% of the rows examined will match the workloads.
+
+```sql
+explain analyze select * from outbound_info \G
+# explain analyze not only show the query plan, but also execute the query
+```
+
+![截屏2022-07-27 下午3.38.01](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lixrs214j20kh026t8s.jpg)
+
+
+
+```sql
+explain format=json select * from outbound_info where proxy = '佳景' \G
+```
+
+![截屏2022-07-27 下午3.43.56](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lj3xcv7ej20fr0i4t9s.jpg)
+
+
+
+### Composite Index
+
+#### Index Commands
+
+```sql
+show index from outbound_info;
+create index public_id_idx on outbound_info (public_id);
+drop index `public_id_idx` on outbound_info;
+```
+
+
+
+```sql
+SELECT count(*) FROM userinfo WHERE name = 'John' AND state_id = 100;
+```
+
+当where涉及到多个column，composite index 比index individual 更快捷。![截屏2022-07-27 下午4.45.30](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lkvzw814j20nw05a0t2.jpg)
+
+```sql
+alter table userinfo add index name_state_id_idx(name, state_id);
+```
+
+
+
+### Redundant Indexes 多余的
+
+![截屏2022-07-27 下午4.51.31](https://tva1.sinaimg.cn/large/e6c9d24ely1h4ll290hidj20un0d40tl.jpg)
+
+![截屏2022-07-27 下午4.54.57](https://tva1.sinaimg.cn/large/e6c9d24ely1h4ll5tqhm4j219e0dmmyi.jpg)
+
+保留两个index让Q1和Q2都保持了高性能，即使index1是redundant index，我们也考虑保留。
+
+#### Examples
+
+1. No index
+
+![截屏2022-07-28 上午10.56.25](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mgfthi3rj20mh02lmxh.jpg)
+
+2. Index (public_id)![截屏2022-07-28 上午11.00.56](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mgjsy8m5j20r402j0sy.jpg)
+
+  3. Index (public_id, outbound_no)
+
+     ![截屏2022-07-28 上午11.05.49](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mgow43qlj20sx02fmxd.jpg)
+
+	
+
+![截屏2022-07-27 下午4.59.00](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lla17i49j20uv0dwjt0.jpg)
+
+但是index越多，insert和delete的性能也会越低。
+
+```sql
+select * from sys.schema_redundant_indexes
+```
+
+![截屏2022-07-28 上午11.23.16](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mh7133psj20j704o0t7.jpg)
+
+#### Extra Remarks
+
+Idx(A) = Idx(A, id)
+
+Idx(A, B) = Idx(A, B, id)
+
+
+
+### Benifits Of Secondary Index
+
+1. reduce the rows examined
+2. sort data
+3. validate data
+4. avoid reading data
+5. find min/max values
+
+
+
+### Tips Of Performance
+
+1. Avoid unnecessary columns in SELECT clause
+2. Indexing of all the predicates(WHERE, JOIN, ORDER BY, GROUP BY)
+3. Avoid using functions in predicates
+4. Avoid using a wildcard(%) at the beginning for LIKE
+5. Limit using of Outer join, Distinct, Union. (Inter join / Union All instead)
+6. Use ORDER BY if mandatory
+7. Don't periodically check and update table using multiple threads. (prefer Redis as persistent queue instead)
+8. Use 'next page' instead of Limit and offset
+9. Use a join instead of subqueries
+10. Use mysql query cache
+11. Use Memcached for mysql caching
+
+
+
+### Statement Of Truncate all tables
+
+```sql
+SELECT CONCAT('TRUNCATE TABLE ',TABLE_NAME,';') AS a 
+FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'db' ;
 ```
 
