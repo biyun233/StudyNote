@@ -724,3 +724,11 @@ SELECT CONCAT('TRUNCATE TABLE ',TABLE_NAME,';') AS a
 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'db' ;
 ```
 
+
+
+### Mysqldump
+
+```sh
+--column-statistics=0 --default-character-set=utf8 # 特殊字符
+```
+

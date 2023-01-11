@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ./img
+---
+
 # GIT教程
 
 
@@ -6,9 +10,7 @@
 
 https://gitforwindows.org/
 
-![git_install](https://tva1.sinaimg.cn/large/008vxvgGly1h8pj8w8j7zj30fx0cytai.jpg)
-
-
+![github1](img/github1.jpeg)
 
 ```sh
 git --version
@@ -23,7 +25,7 @@ git --version
 ssh-keygen -t rsa
 ```
 
-![ssh](https://tva1.sinaimg.cn/large/008vxvgGly1h8pjt1r86xj30ir0armyz.jpg)
+![github2](img/github2.jpeg)
 
 ```
 cat /c/Users/jieni/.ssh/id_rsa.pub
@@ -31,19 +33,17 @@ cat /c/Users/jieni/.ssh/id_rsa.pub
 
 去 https://github.com/settings/ssh 配置ssh keys
 
-![截屏2022-12-02 下午4.29.09](https://tva1.sinaimg.cn/large/008vxvgGly1h8pjqh3hcnj30o70egwgd.jpg)
+![github3](img/github3.jpeg)
 
 ### 3. 新建仓库
 
-![截屏2022-12-02 下午4.36.59](https://tva1.sinaimg.cn/large/008vxvgGly1h8pjyl89sqj30va0fwabs.jpg)
+![github4](img/github4.jpeg)
 
-![截屏2022-12-02 下午4.36.34](https://tva1.sinaimg.cn/large/008vxvgGly1h8pk13mwpcj30y60ammyj.jpg)
-
-
+![github5](img/github5.jpeg)
 
 ### 4. 拉取仓库
 
-![截屏2022-12-02 下午4.46.35](https://tva1.sinaimg.cn/large/008vxvgGly1h8pk8m5y7ej31570gz760.jpg)
+![github6](img/github6.jpeg)
 
 ```sh
 git clone git@github.com:Globalamiba/test.git

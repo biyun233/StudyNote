@@ -6,21 +6,23 @@
 
 ### Common Directories
 
-![截屏2021-12-06 10.08.42](https://tva1.sinaimg.cn/large/008i3skNly1gx3w1mz54dj30qt0bgjt3.jpg)
-
-
+![linux1](img/linux1.jpeg)
 
 ### Comprehensive Directory Listing
 
-![截屏2021-12-06 10.15.55](https://tva1.sinaimg.cn/large/008i3skNly1gx3w9ug2wvj30q20b6tal.jpg)![截屏2021-12-06 10.16.04](https://tva1.sinaimg.cn/large/008i3skNly1gx3w9z0q6bj30pw0beta7.jpg)![截屏2021-12-06 10.16.42](https://tva1.sinaimg.cn/large/008i3skNly1gx3wa3k0c3j30p909ita3.jpg)![截屏2021-12-06 10.16.25](https://tva1.sinaimg.cn/large/008i3skNly1gx3wa7wu89j30py09qdh3.jpg)![截屏2021-12-06 10.17.34](https://tva1.sinaimg.cn/large/008i3skNly1gx3wapdnylj30q90blq4l.jpg)
+![linux2](img/linux2.jpeg)
 
+![linux3](img/linux3.jpeg)
 
+![linux4](img/linux4.jpeg)
+
+![linux5](img/linux5.jpeg)
+
+![linux6](img/linux6.jpeg)
 
 ### Basic Linux Commands
 
-![截屏2021-12-06 10.31.20](https://tva1.sinaimg.cn/large/008i3skNly1gx3wp00wbhj30pz0bldi0.jpg)
-
-
+![linux7](img/linux7.jpeg)
 
 ### Navigating Man pages
 
@@ -36,19 +38,17 @@ q # quit
 
 - PATH
 
-  ![截屏2021-12-06 10.41.56](https://tva1.sinaimg.cn/large/008i3skNly1gx3x012xruj30nf06kdgd.jpg)
-
-  
+  ![linux8](img/linux8.jpeg)
 
 ### Directory Shortcuts
 
-![截屏2021-12-06 10.47.59](https://tva1.sinaimg.cn/large/008i3skNly1gx3x6biecdj30od067aaf.jpg)
+![linux9](img/linux9.jpeg)
 
 
 
 ### Creating and removing directories
 
-![截屏2021-12-06 10.54.15](https://tva1.sinaimg.cn/large/008i3skNly1gx3xcwy9q7j30pj0670tg.jpg)
+![linux10](img/linux10.jpeg)
 
 ```sh
 # [-p]: create the parent directories
@@ -65,29 +65,21 @@ mkdir -p dir1/dir2
 
 ### Decoding ls -l output
 
-![截屏2021-12-06 11.03.12](https://tva1.sinaimg.cn/large/008i3skNly1gx3xmgog23j30pr0bymyc.jpg)
-
-
+![linux11](img/linux11.jpeg)
 
 ### Listing All files, including hidden files
 
-![截屏2021-12-06 11.04.23](https://tva1.sinaimg.cn/large/008i3skNly1gx3xnr2pcmj30o909xmyl.jpg)
-
-
+![linux12](img/linux12.jpeg)
 
 ### Listing files by type
 
-![截屏2021-12-06 11.14.07](https://tva1.sinaimg.cn/large/008i3skNly1gx3xxikxzkj30ky09rdg5.jpg)
+![linux13](img/linux13.jpeg)
 
-![截屏2021-12-06 11.14.41](https://tva1.sinaimg.cn/large/008i3skNly1gx3xy3cb45j30qk0ceq57.jpg)
-
-
+![linux14](img/linux14.jpeg)
 
 ### Listing files by time and in reverse
 
-![截屏2021-12-06 11.15.22](https://tva1.sinaimg.cn/large/008i3skNly1gx3xytg57sj30ot07zdgf.jpg)
-
-
+![linux15](img/linux15.jpeg)
 
 ### Listing files recursively
 
@@ -97,31 +89,25 @@ ls -R
 
 ### The tree command
 
-![截屏2021-12-06 11.17.13](https://tva1.sinaimg.cn/large/008i3skNly1gx3y0vy804j30o30823z1.jpg)
-
-
+![linux16](img/linux16.jpeg)
 
 
 
 # Permissions
 
-![截屏2021-12-06 11.33.51](https://tva1.sinaimg.cn/large/008i3skNly1gx3yi2wk7cj30kc082jrk.jpg)![截屏2021-12-06 11.34.05](https://tva1.sinaimg.cn/large/008i3skNly1gx3yi9vuijj30id07yq32.jpg)
+![linux17](img/linux17.jpeg)![linux18](img/linux18.jpeg)  
 
 ### files vs directories
 
-![截屏2021-12-06 11.34.40](https://tva1.sinaimg.cn/large/008i3skNly1gx3yj16u1zj30q30afq3t.jpg)
+![linux19](img/linux19.jpeg)
 
 ### Permission categories
 
-![截屏2021-12-06 11.35.31](https://tva1.sinaimg.cn/large/008i3skNly1gx3yjqsee3j30h60a1aa7.jpg)
-
-
+![linux20](img/linux20.jpeg)
 
 ### Groups
 
-![截屏2021-12-06 11.36.04](https://tva1.sinaimg.cn/large/008i3skNly1gx3yk9w5p5j30n609smy0.jpg)
-
-
+![linux21](img/linux21.jpeg)
 
 ### Secret Decoder Ring
 
@@ -297,7 +283,7 @@ cat file2 | grep -i tot | head -1 | tr "0" "1"
 
 ### Customizing the shell prompt
 
-![截屏2021-12-08 09.24.00](https://tva1.sinaimg.cn/large/008i3skNly1gx663cju02j30og05et93.jpg)![]()
+![截屏2021-12-08 09.24.00](https://tva1.sinaimg.cn/large/008i3skNly1gx663cju02j30og05et93.jpg)
 
 - ### Customizing the Prompt with PS1
 
@@ -307,7 +293,7 @@ cat file2 | grep -i tot | head -1 | tr "0" "1"
 
 ![截屏2021-12-08 09.23.34](https://tva1.sinaimg.cn/large/008i3skNly1gx65z20dgzj30cr03jwes.jpg)
 
-
+https://camo.githubusercontent.com/47b6ae8d151556713dfd88efb9134b602918af66ab7ebcbd8d86b03919e9452b/68747470733a2f2f747661312e73696e61696d672e636e2f6c617267652f30303876787667476c79316838706a3877386a377a6a333066783063797461692e6a7067
 
 ### Shell aliases
 
@@ -390,4 +376,36 @@ unset EDITOR
 ![截屏2021-12-08 11.52.27](https://tva1.sinaimg.cn/large/008i3skNly1gx6a9y9z1mj30p708t0tg.jpg)
 
 ![截屏2021-12-08 11.54.04](https://tva1.sinaimg.cn/large/008i3skNly1gx6abm7c06j30ot08874w.jpg)
+
+
+
+## Commands
+
+### RSYNC
+
+- 常用选项
+  - -a 包含 -rtplgoD
+  - -r 同步目录时要加上
+  - -t 保持文件的时间属性
+  - -p 保持文件的权限属性
+  - -l 保留软链接
+  - -g 保持文件的属组
+  - -o 保持文件的属主
+  - -D 保持设备文件信息
+  - -L 加上该选项后，同步软链接时会把源文件一起同步
+  - -v 同步时显示信息
+  - --delete 删除DEST中SRC没有的文件
+  - --exclude 过滤指定文件，如 --exclude “logs” 会把文件名包含logs的文件或目录过滤掉，不同步
+  - -P 显示同步过程，比如速率，比 -v 更加详细
+  - -u 如果DEST中的文件比SRC新，则不同步
+  - -z 传输时压缩
+
+​		
+
+```sh
+rsync SRC/ DEST/
+
+# 模拟同步过程
+rsync -av --dry-run SRC/ DEST/
+```
 
