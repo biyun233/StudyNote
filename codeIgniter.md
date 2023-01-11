@@ -1229,7 +1229,7 @@ public function login($email, $password) {
 
 ### Avoid multiple identical database queries
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gvnxy36veyj60mg08y0to02.jpg" style="zoom:50%;" />
+![codeIgniter1](img/codeIgniter1.jpeg)
 
 here `current_user()` executes twice, and the same query is executed twice.
 
@@ -1904,7 +1904,7 @@ Without this new code, is_admin has no value if unchecked so no modification.
 
 # Account activation by email
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvshplwberj30om09lmxv.jpg)
+![codeIgniter2](img/codeIgniter2.jpeg)
 
 ### Add columns to the user table for account activation
 
@@ -2006,7 +2006,7 @@ if(!$user->is_active) {
 
 SMTP mail server
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvsioddqhpj30nd07ygm3.jpg)
+![codeIgniter3](img/codeIgniter3.jpeg)
 
 1. app/Config/Email.php
 
@@ -2185,9 +2185,9 @@ Libraries/Authentication.php
 
 # User-initiated password reset
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gvst25eazmj30qn08rjs2.jpg)
+![codeIgniter4](img/codeIgniter4.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gvst2a7ab5j30qd08smxo.jpg)
+![codeIgniter5](img/codeIgniter5.jpeg)
 
 ### Add a controller and view for starting the password reset process
 
@@ -2959,11 +2959,11 @@ service('image')
 
 # Remembering the login between browser sessions
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gvuyz9hcb6j30qc09iq3f.jpg)
+![codeIgniter6](img/codeIgniter6.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gvuyzge6iuj30qe09xjrv.jpg)
+![codeIgniter7](img/codeIgniter7.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gvuyzlpa7mj30qk0azq3g.jpg)
+![codeIgniter8](img/codeIgniter8.jpeg)
 
 ### Add a migration to store the remember tokens in the database
 

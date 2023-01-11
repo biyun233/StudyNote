@@ -111,63 +111,59 @@ ls -R
 
 ### Secret Decoder Ring
 
-![截屏2021-12-06 11.37.10](https://tva1.sinaimg.cn/large/008i3skNly1gx3ylomkcrj30q007w74m.jpg)
+![linux22](img/linux22.jpeg)
 
 ### Changing Permissions
 
-![截屏2021-12-06 11.38.03](https://tva1.sinaimg.cn/large/008i3skNly1gx3ymbo7tvj30ni0bdaan.jpg)
+![linux23](img/linux23.jpeg)
 
 ### Numeric based permissions
 
-![截屏2021-12-06 11.43.28](https://tva1.sinaimg.cn/large/008i3skNly1gx3ytded6ij30nx08z0sx.jpg)
+![linux24](img/linux24.jpeg)
 
-![截屏2021-12-06 11.45.26](https://tva1.sinaimg.cn/large/008i3skNly1gx3yujyt66j30r40dagnc.jpg)
-
-
+![linux25](img/linux25.jpeg)
 
 ### Order has meaning
 
-![截屏2021-12-06 11.45.44](https://tva1.sinaimg.cn/large/008i3skNly1gx3yvhlp6xj30of09bweo.jpg)
+![linux26](img/linux26.jpeg)
 
 
 
 ### Working with Groups
 
-![截屏2021-12-06 11.52.30](https://tva1.sinaimg.cn/large/008i3skNly1gx3z1dk3fnj30p203ywer.jpg)
-
-
+![linux27](img/linux27.jpeg)
 
 ### Displaying the content of files
 
-![截屏2021-12-06 13.09.59](https://tva1.sinaimg.cn/large/008i3skNly1gx419yztn5j30pz0bdgn6.jpg)
-
-
+![linux28](img/linux28.jpeg)
 
 ### Head and tail
 
-![截屏2021-12-06 13.10.16](https://tva1.sinaimg.cn/large/008i3skNly1gx41ai5uhmj30k706t3z0.jpg)
-
-
+![linux29](img/linux29.jpeg)
 
 # Editing files in Vi
 
-![截屏2021-12-06 13.18.35](https://tva1.sinaimg.cn/large/008i3skNly1gx41jinwfkj30hh0bigmc.jpg)![截屏2021-12-06 13.19.25](https://tva1.sinaimg.cn/large/008i3skNly1gx41juoj8oj30md07vq3q.jpg)![截屏2021-12-06 13.19.45](https://tva1.sinaimg.cn/large/008i3skNly1gx41kac19nj30kq0aiwfc.jpg)
+![linux30](img/linux30.jpeg)
 
-![截屏2021-12-06 13.20.12](https://tva1.sinaimg.cn/large/008i3skNly1gx41kmgk3hj30my09faaw.jpg)
+![linux31](img/linux31.jpeg)
 
-![截屏2021-12-06 15.47.31](https://tva1.sinaimg.cn/large/008i3skNly1gx45u39utyj30no07sgm4.jpg)![截屏2021-12-06 15.47.52](https://tva1.sinaimg.cn/large/008i3skNly1gx45u8cl2oj30pw0af3zn.jpg)
+![linux32](img/linux32.jpeg)
 
-![截屏2021-12-06 15.48.29](https://tva1.sinaimg.cn/large/008i3skNly1gx45uv9ts1j30ns043wes.jpg)
+![linux33](img/linux33.jpeg)
 
+![linux34](img/linux34.jpeg)
 
+![linux35](img/linux35.jpeg)
+
+![linux36](img/linux36.jpeg)
 
 ### Finding files
 
-![截屏2021-12-07 11.04.33](https://tva1.sinaimg.cn/large/008i3skNly1gx539siq8cj30pd08s0tp.jpg)
+![linux37](img/linux37.jpeg)
 
-![截屏2021-12-07 11.04.49](https://tva1.sinaimg.cn/large/008i3skNly1gx53a0olu1j30p00br75a.jpg)
+![linux38](img/linux38.jpeg)
 
-![截屏2021-12-07 11.05.05](https://tva1.sinaimg.cn/large/008i3skNly1gx53abyy5pj30pv0ahq48.jpg)
+![linux39](img/linux39.jpeg)
 
 ```sh
 find . -size +1M
@@ -177,13 +173,11 @@ find . -size +1M
 
 ### Removing files
 
-![截屏2021-12-07 11.37.05](https://tva1.sinaimg.cn/large/008i3skNly1gx548hekunj30px0br759.jpg)
+![linux40](img/linux40.jpeg)
 
 ### Copying files
 
-![截屏2021-12-07 11.38.49](https://tva1.sinaimg.cn/large/008i3skNly1gx549vqzoej30p6093js9.jpg)
-
-![截屏2021-12-07 11.39.42](https://tva1.sinaimg.cn/large/008i3skNly1gx54ab6zrqj30pl092wf5.jpg)
+![linux41](img/linux41.jpeg)![linux42](img/linux42.jpeg)
 
 ```sh
 cp -i # prompt before overwrite
@@ -191,69 +185,45 @@ cp -i # prompt before overwrite
 
 ### Moving and Renaming files
 
-![截屏2021-12-07 11.44.54](https://tva1.sinaimg.cn/large/008i3skNly1gx54g3w5c9j30pw09aaam.jpg)
-
-
+![linux43](img/linux43.jpeg)
 
 ### Sorting files
 
-![截屏2021-12-07 11.47.33](https://tva1.sinaimg.cn/large/008i3skNly1gx54igr9epj30o809v3yy.jpg)
-
-
+![linux44](img/linux44.jpeg)
 
 ### Disk usage
 
-![截屏2021-12-07 11.52.41](https://tva1.sinaimg.cn/large/008i3skNly1gx54ocz9xuj30pe0940t9.jpg)
-
-
+![linux45](img/linux45.jpeg)
 
 ### Input/Output types
 
-![截屏2021-12-07 13.47.46](https://tva1.sinaimg.cn/large/008i3skNly1gx5806od1lj30qn08vgm3.jpg)
+![linux46](img/linux46.jpeg)
 
+### Redirection![linux47](img/linux47.jpeg)
 
+![linux48](img/linux48.jpeg)
 
-### Redirection
+### Comparing files![linux49](img/linux49.jpeg)
 
-![截屏2021-12-07 13.48.37](https://tva1.sinaimg.cn/large/008i3skNly1gx580g4accj30oj0bb0tr.jpg)
-
-![截屏2021-12-07 13.49.02](https://tva1.sinaimg.cn/large/008i3skNly1gx580vzfqmj30qc09h3za.jpg)
-
-
-
-### Comparing files
-
-![截屏2021-12-07 14.00.33](https://tva1.sinaimg.cn/large/008i3skNly1gx58cwpjopj30qe08pt9d.jpg)
-
-![截屏2021-12-07 14.04.50](https://tva1.sinaimg.cn/large/008i3skNly1gx58hl58qmj30q8076dgm.jpg)
-
-
+![linux50](img/linux50.jpeg)
 
 ### Searching in files and using pipes
 
-- ### grep
+- ### grep![linux51](img/linux51.jpeg)![linux52](img/linux52.jpeg)
 
-![截屏2021-12-07 14.40.15](https://tva1.sinaimg.cn/large/008i3skNly1gx59i7v69wj30p807jmxg.jpg)
+- ### The file commande![linux53](img/linux53.jpeg)
 
-![截屏2021-12-07 14.40.31](https://tva1.sinaimg.cn/large/008i3skNly1gx59ig4ui9j30p207iab4.jpg)
-
-- ### The file commande
-
-![截屏2021-12-07 14.46.13](https://tva1.sinaimg.cn/large/008i3skNly1gx59oe9mooj30p90bkgmn.jpg)
-
-- ### Pipes
-
-  ![截屏2021-12-07 14.48.56](https://tva1.sinaimg.cn/large/008i3skNly1gx59r75pfqj30nc07dmxc.jpg)
+- ### Pipes![linux54](img/linux54.jpeg)
 
 - ### Cut
 
-  ![截屏2021-12-07 14.52.35](https://tva1.sinaimg.cn/large/008i3skNly1gx59vhvxh4j30ol05wjrr.jpg)
+  ![linux57](img/linux57.jpeg)
 
-  ![截屏2021-12-07 14.52.40](https://tva1.sinaimg.cn/large/008i3skNly1gx59vikr0pj30ow0770t5.jpg)
+  ![linux55](img/linux55.jpeg)
 
 - ### Strings
 
-  ![截屏2021-12-07 14.53.34](https://tva1.sinaimg.cn/large/008i3skNly1gx59wbsz4oj30mm02wt8r.jpg)
+  ![linux56](img/linux56.jpeg)
 
 ```sh
 cat file2 | grep -i tot | head -1
@@ -275,35 +245,27 @@ cat file2 | grep -i tot | head -1 | tr "0" "1"
 
 - ### copying files over the network
 
-![截屏2021-12-08 09.00.55](https://tva1.sinaimg.cn/large/008i3skNly1gx65bios8zj30l704qgls.jpg)
-
-![截屏2021-12-08 09.08.34](https://tva1.sinaimg.cn/large/008i3skNly1gx65jgjggij30pl08ydgh.jpg)
+![linux58](img/linux58.jpeg)![linux59](img/linux59.jpeg)
 
 
 
 ### Customizing the shell prompt
 
-![截屏2021-12-08 09.24.00](https://tva1.sinaimg.cn/large/008i3skNly1gx663cju02j30og05et93.jpg)
+![linux60](img/linux60.jpeg)
 
 - ### Customizing the Prompt with PS1
 
-![截屏2021-12-08 09.19.59](https://tva1.sinaimg.cn/large/008i3skNly1gx65vdmsysj30pe0b90to.jpg)
+![linux61](img/linux61.jpeg)
 
-![截屏2021-12-08 09.21.37](https://tva1.sinaimg.cn/large/008i3skNly1gx65x17tjpj30ot0b3aba.jpg)
+![linux62](img/linux62.jpeg)
 
-![截屏2021-12-08 09.23.34](https://tva1.sinaimg.cn/large/008i3skNly1gx65z20dgzj30cr03jwes.jpg)
-
-https://camo.githubusercontent.com/47b6ae8d151556713dfd88efb9134b602918af66ab7ebcbd8d86b03919e9452b/68747470733a2f2f747661312e73696e61696d672e636e2f6c617267652f30303876787667476c79316838706a3877386a377a6a333066783063797461692e6a7067
+![linux63](img/linux63.jpeg)
 
 ### Shell aliases
 
+![linux64](img/linux64.jpeg)
 
-
-![截屏2021-12-08 09.28.44](https://tva1.sinaimg.cn/large/008i3skNly1gx664ffxi7j30kt094t99.jpg)
-
-![截屏2021-12-08 09.28.56](https://tva1.sinaimg.cn/large/008i3skNly1gx664n8mamj30p807jmxj.jpg)
-
-
+![linux65](img/linux65.jpeg)
 
 # Environment variables
 
@@ -331,51 +293,47 @@ unset EDITOR
 
 - ### Listing processes and information
 
-  ![截屏2021-12-08 09.50.58](https://tva1.sinaimg.cn/large/008i3skNly1gx66rjfyqej30ha027t8n.jpg)
+  ![linux66](img/linux66.jpeg)
 
-![截屏2021-12-08 09.51.11](https://tva1.sinaimg.cn/large/008i3skNly1gx66rqr3znj30pq07naat.jpg)
-
-![截屏2021-12-08 09.53.06](https://tva1.sinaimg.cn/large/008i3skNly1gx66tr6cq6j30q5096ab7.jpg)
+   ![linux67](img/linux67.jpeg)
 
 - ### Other ways to view processes
 
-![截屏2021-12-08 09.53.34](https://tva1.sinaimg.cn/large/008i3skNly1gx66u9uwbaj30pi054js0.jpg)
+![linux68](img/linux68.jpeg)
 
 - ### Background and foreground processes
 
-  ![截屏2021-12-08 10.02.33](https://tva1.sinaimg.cn/large/008i3skNly1gx673khmsqj30pl050dgk.jpg)
+  ![linux69](img/linux69.jpeg)
+  
+  ![linux70](img/linux70.jpeg)
 
-![截屏2021-12-08 10.03.21](https://tva1.sinaimg.cn/large/008i3skNly1gx674emq69j30nw0b6jsd.jpg)
+
 
 - ### Killing processes
 
-  ![截屏2021-12-08 10.04.22](https://tva1.sinaimg.cn/large/008i3skNly1gx675hdeg2j30pz0b4wff.jpg)
+  ![linux71](img/linux71.jpeg)
 
 
 
 ### Scheduling repeated jobs with cron
 
-![截屏2021-12-08 10.29.32](https://tva1.sinaimg.cn/large/008i3skNly1gx67vymxcjj30oj0b4jsd.jpg)
+![截屏2021-12-08 10.29.32](https://tva1.sinaimg.cn/large/008i3skNly1gx67vymxcjj30oj0b4jsd.jpg)![linux72](img/linux72.jpeg)
 
-![截屏2021-12-08 10.31.09](https://tva1.sinaimg.cn/large/008i3skNly1gx67xbyik2j30qn0a3my8.jpg)
+![截屏2021-12-08 10.31.09](https://tva1.sinaimg.cn/large/008i3skNly1gx67xbyik2j30qn0a3my8.jpg)![linux73](img/linux73.jpeg)
 
-![截屏2021-12-08 10.35.51](https://tva1.sinaimg.cn/large/008i3skNly1gx682e23j9j30hi0bf3yu.jpg)
+![linux74](img/linux74.jpeg)
+
+![linux75](img/linux75.jpeg)
 
 ### Crontab command
 
-![截屏2021-12-08 10.36.21](https://tva1.sinaimg.cn/large/008i3skNly1gx682r7bq8j30pa06xdgr.jpg)
-
-
+![linux76](img/linux76.jpeg)
 
 # Installing software
 
 ### APT - Advanced packaging tool
 
-![截屏2021-12-08 11.50.44](/Users/Biyun/Library/Application Support/typora-user-images/截屏2021-12-08 11.51.44.png)
-
-![截屏2021-12-08 11.52.27](https://tva1.sinaimg.cn/large/008i3skNly1gx6a9y9z1mj30p708t0tg.jpg)
-
-![截屏2021-12-08 11.54.04](https://tva1.sinaimg.cn/large/008i3skNly1gx6abm7c06j30ot08874w.jpg)
+![linux77](img/linux77.jpeg)![linux78](img/linux78.jpeg)
 
 
 

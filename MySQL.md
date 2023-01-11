@@ -326,7 +326,7 @@ Joins allow you to retrieve data from multiple tables in a single select stateme
 
 will retrieve data only when there is matching values in both tables.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtqib3v82sj60fv0863yj02.jpg)
+![mysql1](img/mysql1.jpeg)
 
 ```sql
 select products.name, orders.order_time from orders
@@ -343,7 +343,7 @@ order by o.order_time;
 
 will retrieve all data from the left table (table 1) and matching rows from the right table (table 2).
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtqico6hrjj60fb08ajrg02.jpg)
+![mysql2](img/mysql2.jpeg)
 
 ```sql
 select o.id, c.phone_number, c.last_name, o.order_time from orders o
@@ -354,7 +354,7 @@ limit 10;
 
 ### Right Join
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtqid41tyij60g008emx802.jpg)
+![mysql3](img/mysql3.jpeg)
 
 ### Joining more than two tables
 
@@ -368,7 +368,7 @@ join customers c on o.customer_id = c.id;
 
 ### Normalization
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtqk1hq2ebj60k00apjs502.jpg)
+![mysql4](img/mysql4.jpeg)
 
 avoid storing repeated data in different tables.
 
@@ -378,53 +378,53 @@ Benefirts:
 2. reduce insert, update and deletion anomalies
 3. improve query performance
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gtqk5wjaxaj60nd0akt9f02.jpg" style="zoom:67%;" />
+![mysql5](img/mysql5.jpeg)
 
 ### 1st Normal Form
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gtqk78x5iej60ie07v74m02.jpg" style="zoom:67%;" />
+![mysql6](img/mysql6.jpeg)
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtqka3oolsj60gd0akgm502.jpg" style="zoom:50%;" />                         <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtqkadxmxqj60i50aq0ta02.jpg" style="zoom:50%;" />
+![mysql7](img/mysql7.jpeg)
 
-
+![mysql8](img/mysql8.jpeg)
 
 ### 2nd Normal Form
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtqke5tk5hj60oy07p0t702.jpg" style="zoom:67%;" />
+![mysql9](img/mysql9.jpeg)
 
 (Not 2NF)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqkhhhwe3j60qf0asdgg02.jpg)
+![mysql10](img/mysql10.jpeg)
 
 The whole of primary key is student + subject, the AGE column is dependent on the student but not the subject.
 
 (2NF)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqkjaszo8j60pp0auq3i02.jpg)
+![mysql11](img/mysql11.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqkkfnqyij60kq0aljrm02.jpg)
+![mysql12](img/mysql12.jpeg)
 
 ### 3rd Normal Form
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtqkmlaiyvj60q30710t602.jpg" style="zoom:67%;" />
+![mysql13](img/mysql13.jpeg)
 
 (Not 3NF)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqknxj27bj60qx0ayq3u02.jpg)
+![mysql14](img/mysql14.jpeg)
 
 the star pupil date of birth also depend on star pupil
 
 (3NF)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqksskht6j60q40amwf502.jpg)
+![mysql15](img/mysql15.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqkuquo25j60q40armxp02.jpg)
+![mysql16](img/mysql16.jpeg)
 
 
 
 ### Relationship
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtqkx9ocssj60py07x0td02.jpg" style="zoom:67%;" />
+![mysql17](img/mysql17.jpeg)
 
 ### One to One
 
@@ -432,27 +432,27 @@ a key to one table appears no more than once as the key in another table and vic
 
 Ex: A department can only have one head of department, a head of department can not be head of another department.
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtql49jltmj60kg084wel02.jpg)
+![mysql18](img/mysql18.jpeg)
 
 ### One to Many
 
 a primary key of one table can be in multiple rows of a foreign key column of another table
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtql4lpspyj60lw0813yl02.jpg)
-
 ### Many to Many
 
 two tables can have instances of each other
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqn4wqtmej60j8081mx602.jpg)
+![mysql19](img/mysql19-3419173.jpeg)
 
 Filter coffee can be in many orders, a order could contains many kinds of coffee
 
 ### Constraints
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqn7aysg1j60r2095jsd02.jpg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gtqn8wkpecj60q40aeaax02.jpg)
+
+![mysql20](img/mysql20.jpeg)
+
+![mysql21](img/mysql21.jpeg)
 
 # Aggregate Functions
 
@@ -512,7 +512,7 @@ having customer_id = 10;
 
 The inner query can run independently of the outer query.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtrlr3jzmej60gs076gm702.jpg)
+![mysql22](img/mysql22.jpeg)
 
 Inner query runs first and produces a result set, which is then used by the outer query.
 
@@ -526,7 +526,7 @@ group by booking_id) b;
 
 The inner query can't run independently of the outer query.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtrltap5stj60lu05jaap02.jpg)
+![mysql23](img/mysql23.jpeg)
 
 The inner query runs for every row in the outer query.
 
@@ -596,7 +596,7 @@ explain select * from outbound_info where proxy = '佳景' \G
 # explain just show the query plan
 ```
 
-![截屏2022-07-27 下午3.53.58](https://tva1.sinaimg.cn/large/e6c9d24ely1h4ljewbs4oj20cz05sgls.jpg)
+![mysql24](img/mysql24.jpeg)
 
 **type: ALL** ->
 
@@ -615,17 +615,13 @@ explain analyze select * from outbound_info \G
 # explain analyze not only show the query plan, but also execute the query
 ```
 
-![截屏2022-07-27 下午3.38.01](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lixrs214j20kh026t8s.jpg)
-
-
+![mysql25](img/mysql25.jpeg)
 
 ```sql
 explain format=json select * from outbound_info where proxy = '佳景' \G
 ```
 
-![截屏2022-07-27 下午3.43.56](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lj3xcv7ej20fr0i4t9s.jpg)
-
-
+![mysql26](img/mysql26.jpeg)
 
 ### Composite Index
 
@@ -643,7 +639,7 @@ drop index `public_id_idx` on outbound_info;
 SELECT count(*) FROM userinfo WHERE name = 'John' AND state_id = 100;
 ```
 
-当where涉及到多个column，composite index 比index individual 更快捷。![截屏2022-07-27 下午4.45.30](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lkvzw814j20nw05a0t2.jpg)
+当where涉及到多个column，composite index 比index individual 更快捷。![mysql27](img/mysql27.jpeg)
 
 ```sql
 alter table userinfo add index name_state_id_idx(name, state_id);
@@ -653,9 +649,9 @@ alter table userinfo add index name_state_id_idx(name, state_id);
 
 ### Redundant Indexes 多余的
 
-![截屏2022-07-27 下午4.51.31](https://tva1.sinaimg.cn/large/e6c9d24ely1h4ll290hidj20un0d40tl.jpg)
+![mysql28](img/mysql28.jpeg)
 
-![截屏2022-07-27 下午4.54.57](https://tva1.sinaimg.cn/large/e6c9d24ely1h4ll5tqhm4j219e0dmmyi.jpg)
+![mysql29](img/mysql29.jpeg)
 
 保留两个index让Q1和Q2都保持了高性能，即使index1是redundant index，我们也考虑保留。
 
@@ -663,17 +659,15 @@ alter table userinfo add index name_state_id_idx(name, state_id);
 
 1. No index
 
-![截屏2022-07-28 上午10.56.25](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mgfthi3rj20mh02lmxh.jpg)
+![mysql30](img/mysql30.jpeg)
 
-2. Index (public_id)![截屏2022-07-28 上午11.00.56](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mgjsy8m5j20r402j0sy.jpg)
+2. Index (public_id)![mysql31](img/mysql31.jpeg)
 
   3. Index (public_id, outbound_no)
 
-     ![截屏2022-07-28 上午11.05.49](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mgow43qlj20sx02fmxd.jpg)
+     ![mysql32](img/mysql32.jpeg)
 
-	
-
-![截屏2022-07-27 下午4.59.00](https://tva1.sinaimg.cn/large/e6c9d24ely1h4lla17i49j20uv0dwjt0.jpg)
+![mysql33](img/mysql33.jpeg)
 
 但是index越多，insert和delete的性能也会越低。
 
@@ -681,7 +675,7 @@ alter table userinfo add index name_state_id_idx(name, state_id);
 select * from sys.schema_redundant_indexes
 ```
 
-![截屏2022-07-28 上午11.23.16](https://tva1.sinaimg.cn/large/e6c9d24ely1h4mh7133psj20j704o0t7.jpg)
+![mysql34](img/mysql34.jpeg)
 
 #### Extra Remarks
 

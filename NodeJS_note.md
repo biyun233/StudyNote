@@ -98,7 +98,7 @@ server.listen(3000); // port
 
 ##### 		routes.js
 
-​		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqngoa04ghj30ny0o077u.jpg" style="zoom:50%;" />
+![nodejs1](img/nodejs1.jpeg)
 
 # Improved
 
@@ -108,7 +108,7 @@ server.listen(3000); // port
 
 - ​	package.json
 
-  ​	<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqngelgyi3j30pg04caag.jpg" style="zoom:50%;" />
+  ![nodejs2](img/nodejs2.jpeg)
 
 - ​	`npm start`
 
@@ -120,7 +120,7 @@ server.listen(3000); // port
 
   ​	without `dev` means it is production dependency.
 
-  <img src="https://tva1.sinaimg.cn/large/008i3skNly1gqngfe5h5gj30o6048dgb.jpg" style="zoom:50%;" />
+  ![nodejs3](img/nodejs3.jpeg)
 
 ### Error Types
 
@@ -180,23 +180,21 @@ app.use('/add-product',(req, res, next) => {
 
 ​		x-www-form-urlencoded <form>
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqngk60cl6j30uy0jsn0d.jpg" style="zoom:50%;" />
+![nodejs4](img/nodejs4.jpeg)		
 
-​		要获取request里特定的value： req.body.title， 那么input的name也要为title
+​	要获取request里特定的value： req.body.title， 那么input的name也要为title
 
 ### Router
 
 ##### app.js
 
-​		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqnglb5tr1j30mi0figo3.jpg" style="zoom:50%;" />		
+![nodejs5](img/nodejs5.jpeg)
 
 ##### 		admin.js
 
-​		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqngltp81gj30og0eedi3.jpg" style="zoom:50%;" />
+![nodejs6](img/nodejs6.jpeg)shop.js
 
-##### 		shop.js
-
-​		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqngm8chfoj30ji09uab8.jpg" style="zoom:50%;" />
+![nodejs7](img/nodejs7.jpeg)
 
 ### Error Page
 
@@ -210,20 +208,18 @@ app.use((req, res, next) => {
 
 - ​	origin navigation
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqnh3f0k9dj30ta0amabo.jpg" style="zoom:50%;" />
+![nodejs8](img/nodejs8.jpeg)
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqnh893ryyj30aa07edg7.jpg" style="zoom: 50%;" />
+![nodejs9](img/nodejs9.jpeg)
 
 - ​	helper function for navigation
-
-  ​	
 
   ```javascript
   const path = require('path')
   
   module.exports = path.dirname(require.main.filename)
   ```
-
+  
   ```javascript
   const rootDir = require('../utils/path')
   
@@ -250,7 +246,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 ### Templating Engine
 
-​		<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqnp7ecobuj30ll08kq4i.jpg"  />
+![nodejs10](img/nodejs10.jpeg)
 
 ​		`npm install --save ejs pug express-handlebars`
 
@@ -269,29 +265,27 @@ router.get('/add-product',(req, res, next) => {
 
 ### Pug example ( add-product.pug )
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqntff21isj30wc0pste6.jpg)
+![nodejs11](img/nodejs11.jpeg)
 
 #### Adding Layout
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqnuj1e13bj312g0j2wij.jpg)
+![nodejs12](img/nodejs12.jpeg)
 
 #### extends layout
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqnujr2m1rj30q60co0v7.jpg)
-
-
+![nodejs13](img/nodejs13.jpeg)
 
 ### Ejs example
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqon22oz55j30vi0a240i.jpg)
+![nodejs14](img/nodejs14.jpeg)
 
 #### Layout with partials
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqon3abq4xj30tc0l0dj9.jpg)
+![nodejs15](img/nodejs15.jpeg)
 
 # MVC
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqolvp6jkpj30n909540n.jpg)
+![nodejs16](img/nodejs16.jpeg)
 
 ### Models
 
@@ -515,11 +509,11 @@ Product.findById(prodId)
 
 An Object-Relational Mapping Library
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqtbk07tiyj30qq0apdin.jpg)
+![nodejs17](img/nodejs17.jpeg)
 
 ### Core Concepts
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqtbl7sxwwj30mg0bpjt2.jpg)
+![nodejs18](img/nodejs18.jpeg)
 
 ### Connecting to the Database
 
@@ -688,7 +682,7 @@ Product.findByPk(prodId)
 
  ### One-To-Many Relationship
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqtgu8zyiaj30qx0cuwfs.jpg)
+![nodejs19](img/nodejs19.jpeg)
 
 app.js
 
@@ -788,7 +782,7 @@ cart.getProducts()
   });
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqvs8valguj30y60detbm.jpg)
+![nodejs20](img/nodejs20.jpeg)
 
 每一个 product 相当于 cart 中的 cartItem ， 通过 p.cartItem 获取参数		
 
@@ -837,7 +831,7 @@ req.user
 
 ​		`include`: 当 user 获取 orders 的时候，顺便获取 orders 中的 products
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqvskbcnphj310e0d4q52.jpg)
+![nodejs21](img/nodejs21.jpeg)
 
 
 
@@ -847,15 +841,13 @@ req.user
 
 ​		MongoDB Atlas
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqwqof7bqkj312y0j0wgg.jpg)
+![nodejs22](img/nodejs22.jpeg)
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqwqooenzyj30pm0ggq4o.jpg" style="zoom:50%;" />	
-
-​	account: syviass@heymenology.com
+![nodejs23](img/nodejs23.jpeg)	account: syviass@heymenology.com
 
 ### MongoDB Compass
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqwrx5f38bj60x40qk40q02.jpg" style="zoom:50%;" />
+![nodejs24](img/nodejs24.jpeg)
 
 pwd: RVx1COV1vf3RxT8Z
 
@@ -1039,7 +1031,7 @@ SELECT * FROM products WHERE product.id  `in`  productIds
 
 - `find({ 'user._id': this._id })`
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gqx335arydj30j00400t4.jpg)
+  ![nodejs25](img/nodejs25.jpeg)
 
   we use single quote when the field is nested
 
@@ -1053,11 +1045,11 @@ SELECT * FROM products WHERE product.id  `in`  productIds
 
 An Object-Relational Mapping Library
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqvxkwv3fgj30rr0d177t.jpg)
+![nodejs26](img/nodejs26.jpeg)
 
 ### Core Concepts
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqvxm8vl4hj30m309575h.jpg)
+![nodejs27](img/nodejs27.jpeg)
 
 ### Connecting to the Database
 
@@ -1189,11 +1181,11 @@ Product.findById(prodId)
 
 ​		/models/user.js
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqxw3sae26j30y205m0tn.jpg" style="zoom:50%;" />
+![nodejs28](img/nodejs28.jpeg)
 
 ​		/models/product.js
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gqxw4urzzxj30fk04kaaa.jpg" style="zoom:50%;" />
+![nodejs29](img/nodejs29.jpeg)
 
 ```javascript
 const product = new Product({
@@ -1232,11 +1224,11 @@ req.user
 
 without `populate`
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gratj1zz9tj30nw084abe.jpg" style="zoom:50%;" />
+![nodejs30](img/nodejs30.jpeg)
 
 with `populate('creator')`
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gratjm1elqj30uq0e076v.jpg" style="zoom:50%;" />
+![nodejs31](img/nodejs31.jpeg)
 
 ### Adding Methods To Schema
 
@@ -1276,15 +1268,15 @@ Order.find({"user.userId": req.user._id})
 
 # Session & Cookie
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gqy00nva7dj30fj0b5q4a.jpg)
+![nodejs32](img/nodejs32.jpeg)
 
 ### Cookie Example
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr1ef8axodj30v20cw0v1.jpg)
+![nodejs33](img/nodejs33.jpeg)
 
 But cookie can be changed in the browser(client side), so we need session for help.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr1ejtmbvuj30gw0cgdhl.jpg)
+![nodejs34](img/nodejs34.jpeg)
 
 `npm install --save express-session`
 
@@ -1299,7 +1291,7 @@ app.use(
 
 ### Example
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gr1fg6jz78j30iq0csjt3.jpg" style="zoom:50%;" />
+![nodejs35](img/nodejs35.jpeg)
 
 ### Using MongoDB to Store Sessions
 
@@ -1383,7 +1375,7 @@ exports.postLogout = (req, res, next) => {
 
 # Authentication
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr1pcnknqqj30hc0avjsr.jpg)
+![nodejs36](img/nodejs36.jpeg)
 
 ### Encrypt Password
 
@@ -1465,7 +1457,7 @@ router.get('/add-product', isAuth, adminController.getAddProduct);
 
 ### CSRF Attacks
 
-​		![](https://tva1.sinaimg.cn/large/008i3skNly1gr2jsg2989j30lz0at0v0.jpg)
+![nodejs37](img/nodejs37.jpeg)
 
 ​	The fake sites might send a request to your backend and they could theoretically use your session. So if we give every request a token which is a random hashed value, they can't guess it and they also can't steal it because a new token is generated for every page rendered.
 
@@ -1540,7 +1532,7 @@ res.render('auth/login', {
 
 ### Basic
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gr3oijezz9j30lq04caap.jpg" style="zoom:50%;" />
+![nodejs38](img/nodejs38.jpeg)
 
 ​		the `check` function needs a field name which is defined in input.
 
@@ -1629,11 +1621,11 @@ email: `normalizeEmail()`
 
 password: `trim()`
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gr3s7uihttj30oa0aegmw.jpg" style="zoom:50%;" />
+![nodejs39](img/nodejs39.jpeg)
 
 # Error
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr4viqpdtdj30oo0cdwha.jpg)
+![nodejs40](img/nodejs40.jpeg)
 
 ### Error Handling Middleware
 
@@ -1664,7 +1656,7 @@ This package parses incoming requests for files.
 
 ​		/views/edit-product.ejs
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr4zz93rfxj30ys06ygnm.jpg)
+![nodejs41](img/nodejs41.jpeg)
 
 ​		app.js
 
@@ -1679,13 +1671,13 @@ app.use(multer({dest: 'images'}).single('image'));
 
 ​		/controllers/admin.js
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gr50j0zlbhj30ys06ygnm.jpg)
+![nodejs42](img/nodejs42.jpeg)
 
 ### More Configuration
 
-​		app.js
+​	app.js
 
-		#### 		Adjust Filename & Filepath
+#### 		Adjust Filename & Filepath
 
 ```javascript
 const fileStorage = multer.diskStorage({
@@ -1891,7 +1883,7 @@ const deleteFile = (filePath) => {
 
 **Async**: we send the request but that request typically contains just some data in a format named `json` and that data is sent to the server, to a certain url or a route. And then the server returns a response behind the scenes. So it's not a new html page but again just some data in json format.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr63hdja31j30is0b3myd.jpg)
+![nodejs43](img/nodejs43.jpeg)
 
 ### Application
 
@@ -1901,17 +1893,17 @@ const deleteFile = (filePath) => {
 
 - before
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr63fgl3xzj30z4084di8.jpg)
+![nodejs44](img/nodejs44.jpeg)
 
 we don't need a `form` anymore, which sends a request with x-www-form-urlencoded data, instead we gather the data manually.
 
 - after
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr63gmqunhj310q07gmzd.jpg)
+![nodejs45](img/nodejs45.jpeg)
 
 /public/js/admin.js
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr65lbp5xij30vy0kgdji.jpg)
+![nodejs46](img/nodejs46.jpeg)
 
 /routes/admin.js
 
@@ -2204,7 +2196,7 @@ exports.createPost = (req, res, next) => {
 
    (without uploading image)
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gr9gojym07j60ok0iojtu02.jpg)
+  ![nodejs47](img/nodejs47.jpeg)
 
   `application/json`  represent only text data but not file, so we need form data.
 
@@ -2212,7 +2204,7 @@ exports.createPost = (req, res, next) => {
 
 ​				(setup images)
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gr9hjv65a9j30r00l4gp2.jpg" style="zoom:50%;" />
+![nodejs48](img/nodejs48.jpeg)
 
 ​			we don't need to set the Headers, cause the form data will be set automatically.
 
@@ -2347,7 +2339,7 @@ exports.createPost = (req, res, next) => {
 
 - Client Side
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gr9kfiy0upj30u40420td.jpg)
+  ![nodejs49](img/nodejs49.jpeg)
 
 ### Deleting Data
 
@@ -2393,7 +2385,7 @@ exports.createPost = (req, res, next) => {
 
 - Client Side
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gr9khzw4duj30os0bawgd.jpg" style="zoom:50%;" />
+![nodejs50](img/nodejs50.jpeg)
 
 ### Authentication
 
@@ -2463,7 +2455,7 @@ With a session, the server needs to store data about the client, and then stores
 
 RESTful APIs are stateless, they don't care about the client. Every request should have all the data it needs to authenticate itself.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gr9o7y1wpgj30ha0atdgs.jpg)
+![nodejs51](img/nodejs51.jpeg)
 
 `npm install --save jsonwebtoken`
 
@@ -2639,7 +2631,7 @@ With http, client send a request to the server, and the server return a response
 
   ​		app.js
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1grat1u4iojj30p20d840w.jpg)
+  ![nodejs52](img/nodejs52.jpeg)
 
 - Client Side
 
@@ -2658,11 +2650,11 @@ With **Web Socket**, when a user update the database, the other users don't need
 
   `const io = require('../socket');`
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1grat4q93nuj30qe0e4773.jpg" style="zoom:50%;" />
+![nodejs53](img/nodejs53.jpeg)
 
 - Client Side
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1grat5u34jxj30mk06a0to.jpg)
+  ![nodejs54](img/nodejs54.jpeg)
 
 # GraphQL
 
@@ -2723,7 +2715,7 @@ app.use(
 
 ​		postman
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grayc3stuaj30hu0f4jsf.jpg)
+![nodejs55](img/nodejs55.jpeg)
 
 ### Defining a Mutation Schema
 
@@ -2847,7 +2839,7 @@ app.use(
 
 ==> http://localhost:8080/graphql
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grbqpc5b16j30uh0hy0w5.jpg)
+![nodejs56](img/nodejs56.jpeg)
 
 ### Connecting the Frontend to the GraphQL API
 
@@ -2891,7 +2883,7 @@ const graphQuery = {
 
 Now, we get an error.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grbri72skqj30gy02d74v.jpg)
+![nodejs57](img/nodejs57.jpeg)
 
 The browser sends an `OPTIONS` request before it sends the `POST`, `PATCH`, `PUT`, `DELETE` or so on request. Express-graphql automatically declines anything which is not a `POST` or `GET` request, so the `OPTIONS` request is denied.
 
@@ -2905,7 +2897,7 @@ if(req.method === 'OPTIONS') {
   }
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grbxzkdgpwj30ui0cejtr.jpg)
+![nodejs58](img/nodejs58.jpeg)
 
 ### Using Variable
 
@@ -2960,7 +2952,7 @@ Mutation ( POST, PUT, PATCH, DELETE )
 
 => app.js
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grczlppmqdj30zy03yt9u.jpg)
+![nodejs61](img/nodejs61.jpeg)
 
 ### Secure Response Headers
 
@@ -3020,7 +3012,7 @@ Heroku
 
 # Testing
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gripc6jykpj30po0b3wgp.jpg)
+![nodejs59](img/nodejs59.jpeg)
 
 
 
@@ -3047,5 +3039,5 @@ it('should add numbers correctly', () => {
 
 `Chai` is responsible for defining our success conditions and for this we just need to import something from `Chai`.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gripxiq4osj30ee068jrl.jpg" style="zoom:50%;" />
+![nodejs60](img/nodejs60.jpeg)
 

@@ -524,7 +524,7 @@ Header Set Access-Control-Allow-Origin "*"
 
 ### Allow image upload
 
-		#### 		Content Type
+#### Content Type
 
 ​			When dealing with binary files (such as images or documents) we must use a different content type,  as binary files do not contain ASCII content (just normal text character) so we cannot send an image as part of a JSON request.
 
