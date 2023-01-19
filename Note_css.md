@@ -4,23 +4,21 @@
 
 ### Priority
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grd8hqfiu9j30cg07jab0.jpg)
+![css1](img/css1.jpeg)
 
 ### Combinator
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grd9atcs78j60n909vact02.jpg)
+![css2](img/css2.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grd9bj6bw5j30ne08tgnu.jpg)
+![css3](img/css3.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grd9cie7wpj30ni08c76j.jpg)
+![css4](img/css4.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grd9cyizi0j30nb08ggnw.jpg)
+![css5](img/css5.jpeg)
 
 ### Shorthand
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gre1gogysmj30mn0d5got.jpg)
-
-### Height & Width
+![css6](img/css6.jpeg)Height & Width
 
 ​		`div` and `h1` elements are block level elements, always take the full available width by default.
 
@@ -39,7 +37,7 @@
   }
   ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grxt49igjej307h0550sw.jpg)
+![css7](img/css7.jpeg)
 
 ### Display Property
 
@@ -110,7 +108,7 @@ Some example elements are: `<a>` , `<span>` , `<img>`
 
 ### Pseudo
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1griwlisadtj30mg09h758.jpg)
+![css8](img/css8.jpeg)
 
 ```css
 /* Selects any element that is NOT an active anchor */
@@ -119,7 +117,7 @@ a:not(.active) {
 }
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1griwu0vmeyj314o0gywh5.jpg)
+![css9](img/css9.jpeg)
 
 ```css
 .main-nav__item a::after {
@@ -128,7 +126,7 @@ a:not(.active) {
 }
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1griwusev6yj30e5014aa2.jpg" />
+![css10](img/css10.jpeg)
 
 
 
@@ -189,7 +187,7 @@ if we don't want to place the child element outside of the parent element, we co
 - `left top` : 0% 0%, the left edge of the image is positioned on the left edge of the container etc.
 - `left 10% bottom 20%` : crop 10% to the left, crop 20% to the bottom.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grryxg7iidj30ry0dl0zf.jpg)
+![css11](img/css11.jpeg)
 
 ### shorthand
 
@@ -203,7 +201,7 @@ when origin and clip is the same, we could just set one value.
 
 ### Image Layout
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grs0ttkcsxj30hn0bwgxx.jpg)
+![css12](img/css12.jpeg)
 
 If you've got an image in a surrounding container and the image of course is an inline element, you can
 
@@ -215,7 +213,7 @@ get rid of that whitespace that is introduced to that inline element behavior by
 background-image: linear-gradient(to left bottom, red, blue);
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grs13srsj2j30lj0enwks.jpg)
+![css13](img/css13.jpeg)
 
 ### Radial-gradient
 
@@ -224,7 +222,7 @@ background-image: linear-gradient(to left bottom, red, blue);
 
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grs1byrkg1j30li0eojyb.jpg)
+![css14](img/css14.jpeg)
 
 ### Stacking multiple backgrounds
 
@@ -235,13 +233,13 @@ background-image: linear-gradient(to left bottom, red, blue);
 
 # Size & Units
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grt375xbxaj30pb0cb41n.jpg)
+![css16](img/css16.jpeg)
 
 - An element which has the **position fixed** declaration applied and a **percentage** unit, the containing block is the viewport.
 - An element which has the **position absolute** declaration applied and a **percentage** unit, the containing block is its **ancestor's content plus padding**.
 - An element which has the **position static/relative** declaration applied and a **percentage** unit, the containing block is its **ancestor's content ** which is block level element.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grtb27pptbj30q20butb1.jpg)
+![css17](img/css17.jpeg)
 
 ### Hiding Scrollbars on windows machines
 
@@ -269,7 +267,7 @@ https://web.archive.org/web/20180505112131/https://blogs.msdn.microsoft.com/kurl
 
 `margin: auto;` only works for block level elements with an explicitly assigned width.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gruh3f989zj30qx0enguw.jpg)
+![css18](img/css18.jpeg)
 
 # JavaScript & CSS
 
@@ -366,7 +364,7 @@ desktop: 1000 ~ px
 
 ### Advanced Attribute Selectors
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gryvd9k4ylj30m80cwn3x.jpg)
+![css19](img/css19.jpeg)
 
 ```css
 .signup-form input[id*="terms"],
@@ -376,7 +374,7 @@ desktop: 1000 ~ px
 }
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gryvtint2uj30ja054t9j.jpg" style="zoom:50%;" />
+![css20](img/css20.jpeg)
 
 ### outline
 
@@ -471,7 +469,7 @@ font:  font-style  font-variant  font-weight  font-size* /line-height  font-fami
 
 # Flexbox
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs5sj3icyrj30q60e4q5w.jpg)
+![css21](img/css21.jpeg)
 
 ### Container
 
@@ -484,23 +482,23 @@ font:  font-style  font-variant  font-weight  font-size* /line-height  font-fami
 
 #### flex-direction
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs5tz9n2x8j30n50dm0uw.jpg)
+![css22](img/css22.jpeg)
 
 #### flex-wrap
 
 - `nowrap`
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gs5thxbsmcj60gk06474j02.jpg)
+  ![css23](img/css23.jpeg)
 
 - `wrap`
 
   the maximum height only works for its row.
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gs5tj5nkioj30go06iq35.jpg)
+  ![css24](img/css24.jpeg)
 
 - `wrap-reverse`
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gs5tki0lhuj30j5077glw.jpg)
+  ![css25](img/css25.jpeg)
 
 #### shorthand
 
@@ -512,7 +510,7 @@ font:  font-style  font-variant  font-weight  font-size* /line-height  font-fami
 
 - `center` : center flex items along the **cross axis**.
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gs5u9ytzopj60nn04uweo02.jpg)
+  ![css26](img/css26.jpeg)
 
 - `flex-start` (along the cross axis, same as below)
 
@@ -520,13 +518,13 @@ font:  font-style  font-variant  font-weight  font-size* /line-height  font-fami
 
 - `baseline` : 基线，文字处于同一水平线
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gs5uoewydaj30lu07oq38.jpg)
+  ![css27](img/css27.jpeg)
 
 #### justify-content
 
 - `center` : center flex items along the **main axis**.
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gs5uff89naj30nl0az74l.jpg)
+  ![css28](img/css28.jpeg)
 
 - `flex-start`
 
@@ -542,19 +540,19 @@ font:  font-style  font-variant  font-weight  font-size* /line-height  font-fami
  justify-content: center;
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gs5v3hpvcij30gq0b3mxf.jpg" style="zoom:50%;" />
+![css29](img/css29.jpeg)
 
 - `center`
 
-  <img src="https://tva1.sinaimg.cn/large/008i3skNly1gs5v4bnhjbj30gm0b1jrn.jpg" style="zoom:50%;" />
+  ![css30](img/css30.jpeg)
 
 - `flex-start`
 
-  <img src="https://tva1.sinaimg.cn/large/008i3skNly1gs5v53gmw5j30go0b2q37.jpg" style="zoom:50%;" />
+  ![css31](img/css31.jpeg)
 
 - `space-between`
 
-  <img src="https://tva1.sinaimg.cn/large/008i3skNly1gs5v66r3tnj30gp0b1dg3.jpg" style="zoom:50%;" />
+  ![css32](img/css32.jpeg)
 
   
 
@@ -568,7 +566,7 @@ its value can be -1, 0, 1, defines the order of elements displaying
 
 align a single item along the cross axis.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs62jlvyn9j30py0b474m.jpg)
+![css33](img/css33.jpeg)
 
 #### flex-grow
 
@@ -589,7 +587,7 @@ if `flex-wrap` is wrap applied, when the element is wrapped into the second line
 
 this element occupies the entire space of this second line.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs663mn3a4j60mv0azglz02.jpg)
+![css34](img/css34.jpeg)
 
 #### flex-shrink
 
@@ -642,14 +640,14 @@ A grid element will create new rows dynamically for its direct child elements.
 
 ### Position Child elements by line number
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs70dtna00j30f405r3z8.jpg)
+![css35](img/css35.jpeg)
 
 ```css
 grid-column-start: 3;
 grid-column-end: 5;
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs70g527ljj30f2064q3p.jpg)
+![css36](img/css36.jpeg)
 
 ### repeat
 
@@ -683,7 +681,7 @@ grid-column-end: -1; /* we can also set -2 to reach the last-second column*/
 
 grid elements can overlap if we explicitly set the column and row. Initially, grid will always try to get rid of overlapping.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs714h6n83j30et0apgmn.jpg)
+![css37](img/css37.jpeg)
 
 ### Named Line
 
@@ -773,7 +771,7 @@ grid-auto-flow: row;
 
 this means new element will be created along columns until the entire row is filled, and then grid create a new row.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs783sv2yoj30ln0cntbl.jpg)
+![css38](img/css38.jpeg)
 
 ### Auto-fit
 
@@ -783,21 +781,21 @@ grid-template-columns: repeat(auto-fit, 10rem);
 
 if we don't have enough items for an entire row, `auto-fit` centers items automatically.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs787jizcij30nw0afgni.jpg)
+![css39](img/css39.jpeg)
 
 ### Creating A Dense Grid
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs78cl6jfvj30k60i0gol.jpg)
+![css40](img/css40.jpeg)
 
 we may come across this situation, and we want other elements could jump into the empty case.
 
 ` grid-auto-flow: row dense;`
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gs78eb6xz6j30jg0hv77b.jpg)
+![css41](img/css41.jpeg)
 
 ### Summary
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs79tjioxkj30nw0dagu9.jpg)
+![css42](img/css42.jpeg)
 
 # Transformation
 
@@ -807,7 +805,7 @@ we may come across this situation, and we want other elements could jump into th
 transform: rotateZ(45deg);
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gs7a4zdwk4j30he06ajul.jpg" style="zoom:50%;" />
+![css43](img/css43.jpeg)
 
 ### Setting transform-origin
 
@@ -815,7 +813,7 @@ transform: rotateZ(45deg);
 transform-origin: left top;
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gs7a5wt8vcj30gl069jts.jpg" style="zoom:50%;" />
+![css44](img/css44.jpeg)
 
 ### Using Rotate with Translate
 
@@ -827,11 +825,11 @@ transform: rotateZ(45deg) translateX(10rem);
 
 but here, we rotated the element, the x-axis isn't a normal horizontal line.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs7acfq8dbj306s05awg8.jpg)
+![css45](img/css45.jpeg)
 
 work with `overflow:hidden;` we can get
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs7aibxf9ij307s05o0u2.jpg)
+![css46](img/css46.jpeg)
 
 ### skew
 
@@ -839,7 +837,7 @@ skews 拉扯 elements on the x-axis or y-axis.
 
 `skewX(20deg)`
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs7amiqpjhj30g109ygse.jpg)
+![css47](img/css47.jpeg)
 
 ### scale
 
@@ -893,7 +891,7 @@ setTimeout(function() {
 
 # Animation
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs85nen1oyj30jb0amq3z.jpg)
+![css48](img/css48.jpeg)
 
 ```css
 @keyframes wiggle {

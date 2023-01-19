@@ -496,9 +496,9 @@ When an access token expires, you then use the refresh token to get a new access
 
 We use sessions so we can use the system from multiple devices at the same time.
 
+![restapi1](img/restapi1.jpeg)
 
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gupd17xd6aj60n40e140f02.jpg" style="zoom: 200%;" />	
 
 ### Cross-Origin Resource Sharing (CORS) Setup
 

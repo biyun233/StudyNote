@@ -99,7 +99,7 @@ $alice_email = $people[0]["email"];
 
 ### Loop
 
-		#### 		foreach
+#### foreach
 
 ```php
 $articles = [ "First post", "Another post", "Read this!" ];
@@ -113,7 +113,7 @@ foreach($articles as $index => $article) {
 }
 ```
 
-		#### 		while
+#### 		while
 
 ```php
 $month = 1;
@@ -124,7 +124,7 @@ while ($month <= 12) {
 }
 ```
 
-	#### 		for
+#### 		for
 
 ```php
 for ($i=0; $i < 10; $i++) { 
@@ -134,7 +134,7 @@ for ($i=0; $i < 10; $i++) {
 
 ### Construct
 
-		#### 		If
+#### 	If
 
 ```php
 $articles = [ "First post", "Another post", "Read this!" ];
@@ -191,17 +191,17 @@ http://localhost/phpmyadmin/
 
 ### Create a New Database
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grpm2x0cf2j60tq0a2gn802.jpg)
+![php1](img/php1.jpeg)
 
 ### Create A New User
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grpm55jq49j310c0mowh1.jpg)
+![php2](img/php2.jpeg)
 
 pwd: l9ox..Ohy8Y@AzQx
 
 ### Create a New Table
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1grpmpqh0vcj30wz0agmyk.jpg)
+![php3](img/php3.jpeg)
 
 published_at can be empty.
 
@@ -221,7 +221,7 @@ WHERE condition;
 
 ### Use Index to make Queries faster
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1grpneqlycpj60mk0l0ac302.jpg" style="zoom:50%;" />
+![php5](img/php5.jpeg)
 
 ```sql
 SELECT * FROM article WHERE title = 'Second post';
@@ -382,7 +382,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     [mixed](https://www.php.net/manual/en/language.types.declarations.php#language.types.declarations.mixed) `&...$vars`
   ): bool
 
-  ![](https://tva1.sinaimg.cn/large/008i3skNly1gs9iujsh8jj31860c0q4m.jpg)
+  ![php6](img/php6.jpeg)
 
 # Multiple Pages 
 
@@ -416,7 +416,7 @@ $sql = "SELECT *
 
 http://localhost/article.php?id=1
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gs7curog1cj30bl06n3yn.jpg)
+![php7](img/php7.jpeg)
 
 ### Get rid of Duplicating codes
 
@@ -465,7 +465,7 @@ html part:
 
 create a file named `.htaccess` in includes folder
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gs8dhdzfghj308e0c43z5.jpg" style="zoom:50%;" />
+![php8](img/php8.jpeg)
 
 ```
 Deny from all

@@ -727,7 +727,7 @@ $posts_count = mysqli_num_rows($select_all_posts);
 
 ### Adding the WYSIWYG editor
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1guh566glrgj60l0052wen02.jpg)
+![php9](img/php9.jpeg)
 
 ```html
 <!-- include libraries(jQuery, bootstrap) -->

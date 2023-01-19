@@ -2,7 +2,7 @@
 
 ### Variable Naming
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gse054u880j30rg0cdafs.jpg)
+![js1](img/js1.jpeg)
 
 ### More Operators
 
@@ -39,13 +39,13 @@ log.push(number);
 
 ​		`async` means the browser download the script right away and continue with parsing HTML. Scripts execute right away once it was downloaded. Parsing of HTML will be paused until script is executed.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsfboefjrcj30sp0ep0vn.jpg)
+![js2](img/js2.jpeg)
 
 
 
 ### Ternary Operator
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gshp1b3aqyj30qj0cbdgx.jpg)
+![js3](img/js3.jpeg)
 
 ### Logical Operator
 
@@ -72,7 +72,7 @@ console.log(userName && ''); // userName is truthy, hence second value is return
 
 ### Loops
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gshqiu70i6j30pg0cdgn0.jpg)
+![js4](img/js4.jpeg)
 
 
 
@@ -94,7 +94,7 @@ outerWhile: do {
 
 ### var vs let
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsiksckmt7j30rs0bw3zh.jpg)
+![js5](img/js5.jpeg)
 
 A variable created with `var` in a function can't be used outside of it, a globally can be used everywhere. Now for `let ` and `const` , they don't care about functions but the curly barces `{}` . The curly barces for `if` statements, for `loops`, for `functions` , but not for the `objects` . 
 
@@ -117,13 +117,13 @@ It pulls out all the key-value pairs in person and adds them as new key-value pa
 
 ### A different way of Defining Functions
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsiqha7jeqj30rd0au0tz.jpg)
+![js6](img/js6.jpeg)
 
 
 
 ### Arrow function
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsircfm20gj30rl0cbmyi.jpg)
+![js7](img/js7.jpeg)
 
 ### Rest Operator
 
@@ -209,19 +209,19 @@ combine(showResult.bind(this, 'The result after substracting all numbers is:'), 
 
 The Document Object Model
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsm1lwz56xj30q40cczlp.jpg)
+![js8](img/js8.jpeg)
 
 
 
 ### Nodes & Elements
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsm2e1s549j30pl0chta8.jpg)
+![js9](img/js9.jpeg)
 
 
 
 ### Attributes vs Properties
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsm38tx7swj30py0d8tao.jpg)
+![js10](img/js10.jpeg)
 
 
 
@@ -231,7 +231,7 @@ The Document Object Model
 
 ### Traversing the DOM
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsm44oslauj30o70cv0tl.jpg)
+![js11](img/js11.jpeg)
 
 
 
@@ -249,7 +249,7 @@ The Document Object Model
 </body>
 ```
 
-		#### 		Child Nodes
+#### Child Nodes
 
 ```js
 const ul = document.querySelector('ul');
@@ -335,17 +335,13 @@ ul.remove();
 
 # More On Arrays & Iterables
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsn8capuhpj30q20ctq3z.jpg)
+![js12](img/js12.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsn8cg07p4j30q40cg757.jpg)
+![js13](img/js13.jpeg)
 
 ### Functions for Arrays
 
-
-
 `array.from()` can be useful for converting array-like or iterable objects to real arrays.
-
-
 
 `array.push()` : adding element at last, return new length of the array
 
@@ -484,7 +480,7 @@ console.log(firstName, lastName, otherInformation);
 
 ### Maps & Sets
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsnf59t602j30ou0cb404.jpg)
+![js14](img/js14.jpeg)
 
 ### Working with Sets
 
@@ -526,7 +522,7 @@ for (const value of personData.values()) {
 
 ### Maps vs Objects
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsngzaklbij30l70alt9n.jpg)
+![js15](img/js15.jpeg)
 
 ### WeakSet / WeakMap
 
@@ -597,7 +593,7 @@ const newMovie = {
 movie.getFormattedTitle(); // "this" refers to movie who is calling the function.
 ```
 
-		#### 		Using Object Destructuring
+#### Using Object Destructuring
 
 ```js
 const { getFormattedTitle } = movie;
@@ -640,7 +636,7 @@ let text = getFormattedTitle.apply(movie) + ' - ';
 
 ### Definition
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gswewpwrf0j60q50cjgmz02.jpg)
+![js16](img/js16.jpeg)
 
 ```js
 const productList = {
@@ -686,7 +682,7 @@ productList.render();
 
 ### Classes & Instances
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gswfbrilq7j30m30bc0tr.jpg)
+![js17](img/js17.jpeg)
 
 ```js
 class Product {
@@ -713,7 +709,7 @@ class Product {
 
 ### Class Fields(vs Properties)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gswfeeblz9j60pz0chjsi02.jpg)
+![js18](img/js18.jpeg)
 
 If fields have same name as properties, we can remove these fields. The field is magically added as a property during the construction process anyways.
 
@@ -833,7 +829,7 @@ shop.render();
 
 ### Static Properties, Fields & Methods
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gswgxekkpqj30n80bbab4.jpg)
+![js19](img/js19.jpeg)
 
 ​		If we work with instance always, we can't use one property in other classes cause even they have the same structure but  hold different data. With static properties and static methods, we have a class which is not instantiated and which therefore always works on the same data. we could share some functionality across different parts of our application.
 
@@ -892,7 +888,7 @@ class ShoppingCart {
 
 ### Inheritance
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gswme2nxwwj30q70ctq3y.jpg)
+![js20](img/js20.jpeg)
 
 ```js
 class ShoppingCart extends Component 
@@ -1053,7 +1049,7 @@ orderButton.addEventListener('click', this.orderProducts.bind(this));
 
 ### Private Properties
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gswqhfm3bcj30nt0afdgv.jpg)
+![js21](img/js21.jpeg)
 
 
 
@@ -1086,7 +1082,7 @@ console.log(product._internalId); // works!
 
 ### Prototype
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gsxkvoa59fj30jg09p74v.jpg)
+![js22](img/js22.jpeg)
 
 # Advanced DOM Interactions
 
@@ -1231,7 +1227,7 @@ form.addEventListener('submit', event => {
 
 ### DOM Event - Bubbling & Capturing
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gt4hcpmr8rj30np0aemxh.jpg)
+![js23](img/js23.jpeg)
 
 Bubbling phase: If we have an event listener on the button and on the section, the button event listener will run first. (Default)
 
@@ -1293,7 +1289,7 @@ list.addEventListener('click', (event) => {
 
 ### Drag & Drop
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gt4k9g55naj30li0dbgmr.jpg)
+![js24](img/js24.jpeg)
 
 - #### Configuring Draggable Elements
 
@@ -1409,7 +1405,7 @@ JavaScript is single-threaded, which means Javascript can only execute one task 
 
 ### Promises
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtclsxwt92j60pi0bvt9g02.jpg)
+![js25](img/js25.jpeg)
 
 A promise is in the end an object with the functionality or with the idea of having such a then method which you can call on it.
 
@@ -1549,11 +1545,11 @@ const data = new FormData(form);
 
 ### Limitations of 'Basic projects'
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtexmnvsfkj60qv0c10tk02.jpg)
+![js26](img/js26.jpeg)
 
 
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtexpro8zbj60q90ckgno02.jpg)
+![js27](img/js27.jpeg)
 
 
 
@@ -1565,7 +1561,7 @@ npm install --save-dev eslint
 node_modules/.bin/eslint --init
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gteycac6nuj60l905gq3r02.jpg)
+![js28](img/js28.jpeg)
 
 To fully understand all options you can configure in `.eslintrc.json`, this part of the official docs should be helpful:
 
@@ -1598,7 +1594,7 @@ module.exports = {
 };
 ```
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gtf0lqunc0j605q0d0glt02.jpg)
+![js29](img/js29.jpeg)
 
 ==> package.json
 
@@ -1642,13 +1638,13 @@ module.exports = {
 
 # Browser Storage
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1guxgs0310fj60hv0aqwf602.jpg)
+![js30](img/js30.jpeg)
 
 `e.g.` current shopping cart;   session Id
 
 ### Browser Storage Options
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1guxh3dqv9gj60nl0ax76h02.jpg)
+![js31](img/js31.jpeg)
 
 
 
@@ -1726,15 +1722,15 @@ request.onsuccess = function() {
 
 # Browser Support
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1guyesemtmwj60nr0b0t9y02.jpg)
+![js32](img/js32.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1guyewtqrq5j60lw0bmmz702.jpg)
+![js33](img/js33.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1guyf99faadj60nf0bxq5602.jpg)
+![js34](img/js34.jpeg)
 
 ### Using Feature Detection & Fallback 
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1guyfimhayqj60kw0atjs002.jpg)
+![js35](img/js35.jpeg)
 
 ```js
  const text = textParagraph.textContent;
@@ -1754,11 +1750,11 @@ request.onsuccess = function() {
 
 ### Using Polyfills
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1guyhnae11vj60i10ai3z902.jpg)
+![js37](img/js37.jpeg)
 
 ### Using Transpilation
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1guyiepv6txj60mt0btab602.jpg)
+![js36](img/js36.jpeg)
 
 ```
 npm install --save-dev babel-loader @babel/core @babel/preset-env
@@ -1766,4 +1762,4 @@ npm install --save-dev babel-loader @babel/core @babel/preset-env
 
 # Programming Paradigms
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv6otgou7kj60o20br0tz02.jpg)
+![js38](img/js38.jpeg)

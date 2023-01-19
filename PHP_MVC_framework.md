@@ -1,12 +1,8 @@
 # PHP framework
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gv7txo8bo1j60l90a0aag02.jpg)
+![php10](img/php10.jpeg)Folders
 
-### Folders
-
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gv7ujg3nelj60by0b8q3202.jpg)
-
-
+![php11](img/php11.jpeg)
 
 ### `public` folder
 
@@ -40,19 +36,19 @@ If the file is not found, `require` will stop the script and produce an error. `
 
 The router contains a table that matches routes to controllers and actions.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv7zulg7nfj60q5083wfb02.jpg)
+![php12](img/php12.jpeg)
 
 
 
 ### A regular expression for a simple URL structure
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv7zxv08f9j60oi0b475002.jpg)
+![php13](img/php13.jpeg)
 
 The 'P' after '?' can be ignored 
 
+![php14](img/php14.jpeg)
 
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvb6784r5zj60r90adjrz02.jpg)
 
 ```php
 $route = preg_replace('/\//', '\/', $route);
@@ -73,27 +69,27 @@ $route = '/^' . $route . '$/i';
 
 #### Organise classes by using namespace
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvb8i9vmnpj60qe0ac74z02.jpg)
+![php15](img/php15.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvb8j7v3d6j60md0abgm602.jpg)
+![php16](img/php16.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvbac8meogj60qd09swf202.jpg)
+![php17](img/php17.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvbachx6jxj60ql0btab402.jpg)
+![php18](img/php18.jpeg)
 
 #### Class autoloading
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvbainfngcj60pe0ardgn02.jpg)
+![php19](img/php19.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvbalqme3gj60pp08ot9h02.jpg)
+![php20](img/php20.jpeg)
 
 #### The __call method
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gvbcuairavj60qm0ak3zn02.jpg)
+![php21](img/php21.jpeg)
 
 #### Action filters: call a method before and after every action
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gvbd0r6esij60r20bngmo02.jpg)
+![php22](img/php22.jpeg)
 
 
 
@@ -115,16 +111,16 @@ $route = '/^' . $route . '$/i';
 
 #### Pass data from the controller to the view
 
-1. Extracting variables from an array<img src="https://tva1.sinaimg.cn/large/008i3skNly1gvbfj45edaj60n30ba3z602.jpg" style="zoom:80%;" />
+1. Extracting variables from an array
 
-
+![php23](img/php23.jpeg)
 
 #### Template Engine
 
 1. Tool that helps to separate application code from presentation code
 2. Templates contain no PHP at all: just HTML and simple tags to show data
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gvbfp37gj8j60oz04jt9b02.jpg" style="zoom:80%;" />
+![php24](img/php24.jpeg)
 
 ### Composer
 
@@ -155,70 +151,72 @@ composer dump-autoload
 
 (PHP Data Objects) is a code library for accessing databases.
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gvca02uvlaj60nk03kq3c02.jpg)
+![php25](img/php25.jpeg)
 
 # Regular Expression
 
 1. Metacharacters
 
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gv7wd61tt4j60fj04cq3702.jpg)
+![php26](img/php26.jpeg)
 
 2. The start and end of the string
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7yy5xjuij60a302mjrb02.jpg)
+   ![php27](img/php27.jpeg)
 
 3. Repetition
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7z2sn9nrj607z02hq2s02.jpg)
+   ![php28](img/php28.jpeg)
 
 4. Wildcards
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7z3djxc3j60m401m74802.jpg)
+   ![php29](img/php29.jpeg)
 
 5. Escaping
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7z3x8qjhj60gi01o3yf02.jpg)
+   ![php30](img/php30.jpeg)
+
+   
 
 6. Character sets
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7z4oz25xj60on025dfy02.jpg)
+   ![php31](img/php31.jpeg)
 
 7. Character ranges
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7z595zawj60pb02eaa902.jpg)
+   ![php32](img/php32.jpeg)
 
 8. Negated character sets
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7z66q1khj60px02bq3302.jpg)
+   ![php33](img/php33.jpeg)
 
 9. Capture groups
 
-   ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7zlqupi6j60ps02aglq02.jpg)
+   ![php34](img/php34.jpeg)
 
 10. Named capture groups
 
-    ![](https://tva1.sinaimg.cn/large/008i3skNly1gv7znq1spuj60ix01oaa002.jpg)
+    ![php35](img/php35.jpeg)
 
 11. Backreferences to capture groups
 
-    ![](https://tva1.sinaimg.cn/large/008i3skNly1gv80g5rcv4j60l801hq2w02.jpg)
+    ![php36](img/php36.jpeg)
 
 ### Regular expression matching
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv7zk20kppj60hg08hwes02.jpg)
+![php37](img/php37.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv7zkdpz5xj60je08yjrr02.jpg)
+![php38](img/php38.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv80hlk9nwj612607imxl02.jpg)
+![php39](img/php39.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv7zorkv0oj60qi06q0t202.jpg)
+![php40](img/php40.jpeg)
 
 
 
 ### Replace parts of strings using regular expressions
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv80c9rebtj60pd07ct9702.jpg)
+![php41](img/php41.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv80d3vukpj60pb02zweh02.jpg)
+![php42](img/php42.jpeg)
 
-![](https://tva1.sinaimg.cn/large/008i3skNly1gv80hzr39ej616405wwey02.jpg)
+![php43](img/php43.jpeg)

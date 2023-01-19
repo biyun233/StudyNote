@@ -112,13 +112,13 @@ cat /var/log/nginx/error.log
 
   ### OVFtool 可能出现Error
 
-  - ![截屏2021-12-01 13.18.43](https://tva1.sinaimg.cn/large/008i3skNly1gwyadzv8yaj312m02874p.jpg)
+  - ![vagrant1](img/vagrant1.jpeg)
 
     ```sh
     ln -s /Applications/VMware\ OVF\ Tool/ovftool /usr/local/bin
     ```
 
-  - ![截屏2021-12-01 13.18.49](https://tva1.sinaimg.cn/large/008i3skNly1gwyag9zlpbj314a05st9q.jpg)
+  - ![vagrant2](img/vagrant2.jpeg)
 
     ```shell
     cd /Users/Biyun/.vagrant.d/boxes/bento-VAGRANTSLASH-ubuntu-20.04/202110.25.0/vmware_desktop
