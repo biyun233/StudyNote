@@ -271,7 +271,7 @@ cat /var/log/nginx/error.log
   # username: dev
   nginx -v
   php -v
-  mysql -udev -p
+  mysql -u dev -p
   ```
 
   安装composer，npm
@@ -343,5 +343,22 @@ get HM_npd:admin_id_to_menu_1 # 获取key的值
 
 ```
 /var/www/log/
+```
+
+
+
+## 开启cron日志功能
+
+```sh
+sudo vi /etc/rsyslog.d/50-default.conf
+# 将下文去掉注释 
+# cron.*                          /var/log/cron.log
+sudo systemctl restart rsyslog
+```
+
+或者可以直接查看syslog，还会包含错误信息
+
+```sh
+cat /var/log/syslog | grep CRON
 ```
 
