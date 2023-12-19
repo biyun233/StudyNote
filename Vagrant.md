@@ -194,7 +194,8 @@ cat /var/log/nginx/error.log
   	php7.4-opcache \
   	php7.4-readline \
   	php7.4-xml \
-  	php7.4-zip
+  	php7.4-zip \
+  	php7.4-bcmath
   
   sudo sed -i "s/^;slowlog =/slowlog =/g" /etc/php/7.4/fpm/pool.d/www.conf
   sudo sed -i 's/^expose_php = On/expose_php = Off/g' /etc/php/7.4/fpm/php.ini
@@ -272,6 +273,13 @@ cat /var/log/nginx/error.log
   nginx -v
   php -v
   mysql -u dev -p
+  
+  CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
+  GRANT ALL PRIVILEGES ON * . * TO 'new_user'@'localhost';
+  FLUSH PRIVILEGES;
+  
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+  FLUSH PRIVILEGES;
   ```
 
   安装composer，npm
@@ -360,5 +368,21 @@ sudo systemctl restart rsyslog
 
 ```sh
 cat /var/log/syslog | grep CRON
+```
+
+### php.ini
+
+```
+post_max_size = 1024M
+max_execution_time = 10000
+max_input_time = 3000
+memory_limit = 1024M
+upload_max_filesize = 1024M
+extension=fileinfo
+extension=gd
+extension=pdo_mysql
+date.timezone = 'Asia/Shanghai'
+curl.cainfo=/etc/nginx/ssl/voltage_project/cert.pem
+openssl.cafile=/etc/nginx/ssl/voltage_project/cert.pem
 ```
 

@@ -566,6 +566,9 @@ select upper(name) from rooms;
 select date('2018-06-05 07:45:32');
 -- 2018-06-05
 
+select SUBDATE("2017-06-15", 1);
+-- 2017-06-14
+
 select product_id, customer_id, order_time from orders
 where date(order_time) between '2017-01-01' and '2017-01-07';
 -- 2017-01-07 is included
@@ -724,5 +727,16 @@ FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'db' ;
 
 ```sh
 --column-statistics=0 --default-character-set=utf8 # 特殊字符
+```
+
+### Privilege
+
+```sh
+CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'new_user'@'localhost';
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+FLUSH PRIVILEGES;
 ```
 

@@ -59,9 +59,7 @@ mkdir -p dir1/dir2
 # rmdir only removes directories that are empty
 ```
 
-
-
-# Listing Files and Understanding ls output
+## Listing Files and Understanding ls output
 
 ### Decoding ls -l output
 
@@ -91,9 +89,7 @@ ls -R
 
 ![linux16](img/linux16.jpeg)
 
-
-
-# Permissions
+## Permissions
 
 ![linux17](img/linux17.jpeg)![linux18](img/linux18.jpeg)  
 
@@ -141,7 +137,7 @@ ls -R
 
 ![linux29](img/linux29.jpeg)
 
-# Editing files in Vi
+## Editing files in Vi
 
 ![linux30](img/linux30.jpeg)
 
@@ -169,7 +165,7 @@ ls -R
 find . -size +1M
 ```
 
-#  Actions to files
+## Actions to files
 
 ### Removing files
 
@@ -267,7 +263,7 @@ cat file2 | grep -i tot | head -1 | tr "0" "1"
 
 ![linux65](img/linux65.jpeg)
 
-# Environment variables
+## Environment variables
 
 ### Viewing
 
@@ -289,7 +285,7 @@ export EDITOR="vi"
 unset EDITOR
 ```
 
-# Processes and job control
+## Processes and job control
 
 - ### Listing processes and information
 
@@ -315,11 +311,7 @@ unset EDITOR
 
 
 
-### Scheduling repeated jobs with cron
-
-![截屏2021-12-08 10.29.32](https://tva1.sinaimg.cn/large/008i3skNly1gx67vymxcjj30oj0b4jsd.jpg)![linux72](img/linux72.jpeg)
-
-![截屏2021-12-08 10.31.09](https://tva1.sinaimg.cn/large/008i3skNly1gx67xbyik2j30qn0a3my8.jpg)![linux73](img/linux73.jpeg)
+### Scheduling repeated jobs with cron![linux73](img/linux73.jpeg)
 
 ![linux74](img/linux74.jpeg)
 
@@ -329,7 +321,7 @@ unset EDITOR
 
 ![linux76](img/linux76.jpeg)
 
-# Installing software
+## Installing software
 
 ### APT - Advanced packaging tool
 
