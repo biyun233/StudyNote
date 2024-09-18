@@ -386,3 +386,12 @@ curl.cainfo=/etc/nginx/ssl/voltage_project/cert.pem
 openssl.cafile=/etc/nginx/ssl/voltage_project/cert.pem
 ```
 
+### npm install error
+
+```sh
+EPROTO: protocol error, symlink '../@babel/parser/bin/babel-parser.js'
+
+# use
+npm install --no-bin-links
+```
+

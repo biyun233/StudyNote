@@ -29,7 +29,7 @@ mysql -h 192.168.10.121 -P 3306 -u root -p
 
 ```sql
 -- M: length of the number
--- D: length of the nomber go after the decimal point
+-- D: length of the number go after the decimal point
 -- float(3, 2) : 1.78    float(4, 2) : 10.25
 ```
 
@@ -734,9 +734,57 @@ FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'db' ;
 ```sh
 CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON * . * TO 'new_user'@'localhost';
+# read only
+GRANT SELECT ON * . * TO 'reader'@'localhost'; 
 FLUSH PRIVILEGES;
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 FLUSH PRIVILEGES;
+
+# delete user
+DROP USER 'test'@'%';
+
+# 撤销该用户的所有权限
+REVOKE ALL PRIVILEGES ON *.* FROM 'customer'@'%';
+
+GRANT REPLICATION SLAVE ON *.* TO 'customer'@'%';
+```
+
+
+
+### Execute SQL File
+
+```sh
+sudo mysql -u root -p
+source /path/filename
+```
+
+### 查看用户
+
+```sql
+select user,host,authentication_string from mysql.user;
+```
+
+#### 更新updated_at，前50条为14:30，每隔50条加5分钟
+
+```sql
+SET @interval := 0;
+SET @batch_size := 50;
+SET @time_increment := 5 * 60; -- 10 分钟以秒为单位
+
+UPDATE projects
+JOIN (
+    SELECT id, 
+           FLOOR((@row_number := @row_number + 1) / @batch_size) AS batch_number
+    FROM projects, (SELECT @row_number := 0) AS rn
+    ORDER BY id
+) AS ranked_table
+ON projects.id = ranked_table.id
+SET updated_at = ADDTIME('2024-08-09 14:35:00', SEC_TO_TIME(batch_number * @time_increment))
+WHERE projects.is_delete = 0;
+
+SET @interval := 0;
+SET @batch_size := 50;
+SET @time_increment := 5 * 60; -- 10 分钟以秒为单位
 ```
 

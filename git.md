@@ -102,6 +102,7 @@ git push -f origin {branch}
 
 ```sh
 git branch -m {oldName} {newName}
+git branch -d origin {oldName}
 ```
 
 

@@ -5,6 +5,7 @@
 ```sh
 cat /etc/passwd
 userdel username # remove user
+useradd username
 ```
 
 
@@ -98,7 +99,9 @@ sudo vi sources.list
 ### install Nodejs
 
 ```sh
-curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - &&\
+sudo apt remove nodejs
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
@@ -114,9 +117,58 @@ sudo apt install yarn
 ```sh
 # 使用yarn install 报错：error An unexpected error occurred: "https://registry.yarnpkg.com/@heroicons%2fvue: ETIMEDOUT".
 # 把资源地址设置成npm淘宝源
+npm config get registry
 npm config set registry https://registry.npm.taobao.org
 npm config set disturl https://npm.taobao.org/dist
+npm config set registry https://registry.npmmirror.com
+```
 
+### gzip
 
+```sh
+gzip filename
+gzip -d file.gz
+```
+
+### timezone 
+
+```
+sudo timedatectl set-timezone Asia/Shanghai
+```
+
+### nginx
+
+```sh
+# 查看nginx当前端口
+sudo netstat -lnp | grep nginx
+```
+
+### iptables
+
+```sh
+sudo iptables -L -v -n | more
+
+# 禁止访问3306
+sudo iptables -I INPUT -p TCP --dport 3306 -j DROP                                                                       
+# 允许本机访问
+sudo iptables -I INPUT -s 127.0.0.1 -p TCP --dport 3306 -j ACCEPT
+
+# 允许所有ip访问
+sudo iptables -I INPUT -p TCP --dport 3306 -j ACCEPT
+
+# remove rules
+sudo iptables -L --line-numbers
+sudo iptables -D INPUT 1
+```
+
+```
+ sudo mysql -u customer -h pv20140610.synology.me --port=43306 -p
+```
+
+#### 查看磁盘
+
+```sh
+df -h
+du --max-depth=1 -h
 ```
 
